@@ -7,7 +7,11 @@
 
 //CODE HERE
 
+function sum(num1, num2){
+  return num1 + num2
+}
 
+//console.log(sum(7,10))
 //////////////////PROBLEM 2////////////////////
 /*
   Create a function called 'greaterThanFive' that takes in a single parameter called 'number'. 
@@ -17,6 +21,16 @@
 */
 
 //CODE HERE
+
+function greaterThanFive(number){
+  if(number > 5){
+    return true
+  } else {
+    return false
+  }
+}
+
+console.log(greaterThanFive(6))
 
 //////////////////PROBLEM 3////////////////////
 /*
@@ -28,6 +42,15 @@
 
 //CODE HERE
 
+function findZWords(word){
+  if(word.startsWith('z')){
+    return 'the name begins with z'
+  } else {
+    return 'the name does not begin with Z'
+  }
+}
+console.log(findZWords('Cobra'))
+
 //////////////////PROBLEM 4////////////////////
 /*
   Create a function called 'iLove' that takes in two string parameters, 'name' and 'love'. 
@@ -36,3 +59,9 @@
 */
 
 //CODE HERE
+
+function iLove(name, love){
+  return `${name} loves ${love}`
+}
+
+console.log(iLove('Joseph', 'music'))

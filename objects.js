@@ -16,7 +16,16 @@
 
 //CODE HERE
 
+const me = {
+  firstName: 'Spencer',
+  state: 'Utah',
+  age: 24,
+  greeter(){
+    console.log(`Hello! My name is ${this.firstName} and I live in ${this.state}`)
+  }
+}
 
+//me.greeter()
 
 
 
@@ -45,3 +54,39 @@
 */
 
 //CODE HERE
+
+// class carFactory{
+//   constructor(make, model, year){    
+//     this.make = make,
+//     this.model = model,
+//     this.year = year
+  
+//   if(year > 2018){
+//    carFactory.isNew = true
+//   } else {
+//    carFactory.isNew = false
+//   }
+// }
+// display(){
+//   console.log(this.make, this.model, this.year, this.isNew)
+// }
+// }
+
+// let newCar = new carFactory('toyota', 'camry', 2020)
+
+// console.log(newCar)
+
+function carFactory(make, model, year){
+  this.make = make,
+  this.model = model,
+  this.year = year
+  if(year > 2018){
+    return carFactory.isNew = true
+  } else {
+    return carFactory.isNew = false
+  }
+}
+
+let newCar = new carFactory('toyota', 'camry', 2020)
+
+console.log(newCar)

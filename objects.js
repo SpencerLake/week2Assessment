@@ -55,38 +55,18 @@ const me = {
 
 //CODE HERE
 
-// class carFactory{
-//   constructor(make, model, year){    
-//     this.make = make,
-//     this.model = model,
-//     this.year = year
-  
-//   if(year > 2018){
-//    carFactory.isNew = true
-//   } else {
-//    carFactory.isNew = false
-//   }
-// }
-// display(){
-//   console.log(this.make, this.model, this.year, this.isNew)
-// }
-// }
-
-// let newCar = new carFactory('toyota', 'camry', 2020)
-
-// console.log(newCar)
-
 function carFactory(make, model, year){
   this.make = make,
   this.model = model,
   this.year = year
   if(year > 2018){
-    return carFactory.isNew = true
+    this.isNew = true
   } else {
-    return carFactory.isNew = false
+    this.isNew = false
   }
 }
 
-let newCar = new carFactory('toyota', 'camry', 2020)
+//carFactory('toyta', 'macry', 2020)
 
+ let newCar = new carFactory('toyota', 'camry', 2020)
 console.log(newCar)
